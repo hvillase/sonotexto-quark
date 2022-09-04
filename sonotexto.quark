@@ -1,4 +1,7 @@
 (
-name: "hvillase",
-summary: "clases de sonotexto"
+name: "sonotexto",
+summary: "sonotexto classes to record, oraganizae and sequence audiofiles"
+version:"1.0.0"
+license: "GPL"
+copyright: "hvillase"
 )

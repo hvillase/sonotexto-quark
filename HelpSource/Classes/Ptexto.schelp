@@ -1,0 +1,50 @@
+TITLE:: Ptexto
+summary:: a modulo pattern to values in a list.
+related:: Classes/Buffer, Reference/Pattern
+
+DESCRIPTION::
+This pattern applies the modulo operation to the values of a list. It also allows summing a number when the result 0 is problematic as in the case of duration.
+
+
+CLASSMETHODS::
+
+METHOD:: new
+Creates an instance of the class.
+
+ARGUMENT:: list
+Contains a list of numbers to be used in the modulo operation.
+
+ARGUMENT:: modVal
+The value of the modulo operation.
+
+ARGUMENT:: sumVal
+A sum to the result of the modulo operation (if necessary).
+
+ARGUMENT:: repeats
+The number of repetitions of the pattern.
+
+
+INSTANCEMETHODS::
+
+METHOD:: sumVal
+
+METHOD:: repeats
+
+METHOD:: embedInStream
+
+
+ARGUMENT:: inval
+
+
+METHOD:: lista
+
+
+METHOD:: modVal
+
+
+EXAMPLES::
+
+code::
+~p=Ptexto([2, 3, 4, 5], 2, 0, inf).asStream;
+~p.next;
+::

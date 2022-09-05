@@ -1,0 +1,81 @@
+TITLE:: SonoTexto
+summary:: Record small fragments of sound in buffers.
+categories:: RecordBuf
+related:: Classes/Buffer, Classes/RecordBuf, Classes/PlayBuf
+
+DESCRIPTION::
+Record the sound input into a Buffer. The recording time is set up to 5 and 10 seconds in mono and stereo options. It is possible to save the recorded sounds on the hard disk and read them later. This Class requires making a folder called sonotexto in the Recordings path of SuperCollider, usually in Extensions.
+
+
+First code examples:
+
+code::
+~a=SonoTexto;
+~a.boot;
+~a.rec(1, 0, 0, 0);
+
+// Play the sound
+Synth(\b1);
+::
+
+CLASSMETHODS::
+
+METHOD:: write
+
+argument:: b1
+Writes Buffer 1 to hard disc when is 1.
+
+argument:: b2
+Writes Buffer 2 to hard disc when is 1.
+
+argument:: b3
+Writes Buffer 3 to hard disc when is 1.
+
+argument:: b4
+Writes Buffer 4 to hard disc when is 1.
+
+METHOD:: st
+A method to read samples of your sonotexto folder.
+
+METHOD:: boot
+Boots the Class to operate.
+
+METHOD:: read
+argument:: server
+Reads the sound files of the folder sonotexto.
+
+METHOD:: rec
+argument:: b1
+Records Buffer 1 to hard disc when 1.
+
+argument:: b2
+Records Buffer 2 to hard disc when 1.
+
+argument:: b3
+Records Buffer 3 to hard disc when 1.
+
+argument:: b4
+Records Buffer 4 to hard disc when 1.
+
+METHOD:: info
+Gives information about how many sounds are in the folder sonotexto.
+
+INSTANCEMETHODS::
+
+
+EXAMPLES::
+
+code::
+~a=SonoTexto; // creates sonotexto object
+~a.boot; // prepares the four buffers to record sound.
+~a.rec(1, 0, 0, 0); // records buffer 1 when is 1 (true)
+~a.write(1, 0, 0, 0); // writes the sound of buffer 1 to hard disk when is 1 (true)
+
+(
+Pdef(\sonotexto,
+	Pbind(\instrument, \b1,
+		\dur, 5,
+		\rate, 1
+)).play;
+)
+::

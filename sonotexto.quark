@@ -1,7 +1,11 @@
 (
-name: "sonotexto",
-summary: "sonotexto classes to record, oraganizae and sequence audiofiles"
-version:"1.0.0"
-license: "GPL"
-copyright: "hvillase"
+ name: "sonotexto",
+ summary: "sonotexto to record, sampletexto to organize, and ptexto to sequence audio files",
+ author: "Hernani Villasenor",
+ version:"1.0.0",
+ license: "GPL",
+ copyright: "hvillase",
+ schelp: "SonoTexto",
+ url: "https://github.com/hvillase/sonotexto-quark",
+ since: "2019"
 )

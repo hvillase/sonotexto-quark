@@ -1,9 +1,9 @@
 # sonotexto-quark
-Este Quark contiene las clases SonoTexto, SampleTexto y Ptexto desarrolladas como parte del proyecto de investigación del doctorado en tecnología musical de la UNAM por Hernani Villaseñor.  
-**SonoTexto:** graba y guarda sonidos en la carpeta \<sonotexto\>.  
-**SampleTexto:** lee sonidos de una carpeta por su número de índice y crea un SynthDef por cada sonido mono y estéreo.  
-**Ptexto:** es un patrón con base en la operación módulo.  
+This quark contains the SonoTexto, SampleTexto, and Ptexto classes developed as part of Hernani Villaseñor's Ph.D. research project in music technology at UNAM.  
+**SonoTexto:** records and saves sounds in the \<sonotexto> folder.  
+**SampleText:** reads sounds from a folder by their index number and creates a SynthDef for each mono and stereo sound.  
+**Text:** is a pattern based on the module operation.  
 	
-# Instalación
-1 Descargar el quark y colocarlo en la carpeta de quarks en Extensions.   
-2 Crear las carpetas con el nombre \<sonotexto\> y \<sampletexto\> y colocarlas en la ruta Recordings de SuperCollider.
+# Installation
+1 Download the quark and place it in the quark folder in Extensions.   
+2 Create folders named \<sonotexto> and \<sampletexto> and place them in the Recordings path in SuperCollider.

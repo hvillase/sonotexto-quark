@@ -5,5 +5,5 @@ This quark contains the SonoTexto, SampleTexto, and Ptexto classes developed as 
 **Ptexto:** is a pattern based on the module operation.  
 	
 # Installation
-1 Download the quark and place it in the quark folder in Extensions.   
+1 Download the quark and place it in the quark or downloaded-quarks folder in Extensions.   
 2 Create folders named \<sonotexto> and \<sampletexto> and place them in the Recordings path in SuperCollider.

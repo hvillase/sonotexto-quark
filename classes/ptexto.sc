@@ -1,4 +1,4 @@
-// Sequential pattern to modulo
+// Sequential pattern for modulo operator
 
 Ptexto : Pattern {
 
